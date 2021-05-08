@@ -8,7 +8,7 @@ function computerPlay() {
 
 
 function playRound(playerSelection, computerSelection) {
-    lowerCaseSelection = playerSelection.toLowerCase()
+    const lowerCaseSelection = playerSelection.toLowerCase()
 
     if (lowerCaseSelection === 'rock' && computerSelection === 'paper') return 'You lose! Paper beats Rock'
     
