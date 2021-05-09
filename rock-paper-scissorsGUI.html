@@ -13,7 +13,6 @@
         <div class = 'screen' id = 'screen1'>
             <div class = 'score-container' id = 'score-container-user'>You: 0</div>
             <div class = 'image-container' id = 'image-container-user'>
-                <img class = 'scissors-image' id = 'user-scissors-image' src="https://img.icons8.com/officel/100/000000/scissors.png"/>
             </div>
         </div>
     </div>
@@ -21,20 +20,19 @@
         <div class = 'screen' id = 'screen2'>
             <div class = 'score-container' id = 'score-container-comp'>Computer: 0</div>
             <div class = 'image-container' id = 'image-container-comp'>
-                <img class = 'rock-image' id = 'comp-rock-image' src="https://img.icons8.com/officel/100/000000/rock.png"/>
             </div>
         </div>
     </div>
     <div id = 'button-container'>
         <div>
             <p>Choose an option:</p>
-            <button class = 'button'><img src="https://img.icons8.com/officel/40/000000/rock.png"/></button>
-            <button class = 'button'><img src="https://img.icons8.com/ultraviolet/40/000000/paper.png"/></button>
-            <button class = 'button'><img src="https://img.icons8.com/ultraviolet/40/000000/scissors.png"/></button>
+            <button class = 'button' id = 'rock' type = 'button'><img src="https://img.icons8.com/officel/40/000000/rock.png"/></button>
+            <button class = 'button' id = 'paper' type = 'button'><img src="https://img.icons8.com/ultraviolet/40/000000/paper.png"/></button>
+            <button class = 'button' id = 'scissors' type = 'button'><img src="https://img.icons8.com/ultraviolet/40/000000/scissors.png"/></button>
         </div>
     </div>
 
-    <script src = "rock-paper-scissorsGUI.js"></script>
+    <script type = 'module' src = "rock-paper-scissorsGUI.js"></script>
 </body>
 
 </html>

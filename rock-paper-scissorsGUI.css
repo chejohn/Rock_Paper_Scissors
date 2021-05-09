@@ -95,7 +95,7 @@ body {
 }
 
 .button:hover {
-    box-shadow: 0 0 6px 1px #8C8C8C;
+    transform: scale(1.1);
 }
 
 p {

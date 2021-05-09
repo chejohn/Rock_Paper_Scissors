@@ -45,4 +45,5 @@ function game() {
     else return `Tied game! Computer score: ${computerScore} points. Player score: ${playerScore} points.`
 }
 
-console.log(game())
+
+export {computerPlay}
