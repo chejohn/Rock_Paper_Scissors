@@ -81,6 +81,7 @@ function progressGame() {
         if (playerScore > compScore) optionGUI.textContent = 'You Win!';
         else if (playerScore < compScore) optionGUI.textContent = 'You Loose!'
         else optionGUI.textContent = 'Tied Game!';
+        roundCountGUI.textContent = 'Game Over!';
     }
 }
 
