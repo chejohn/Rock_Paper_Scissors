@@ -10,6 +10,7 @@ body {
         'header-container header-container'
         'screen-container1 screen-container2'
         'button-container button-container';
+    background-color: rgba(114, 159, 224, 0.85);
 }
 
 #header-container { 
@@ -17,7 +18,6 @@ body {
     display: grid;
     justify-content: center;
     height: 120px;
-    background-color: lightblue;
 }
 
 #header {
@@ -35,14 +35,12 @@ body {
     grid-area: screen-container1;
     display: grid;
     height: 300px;
-    background-color: lightgray;
 }
 
 #screen-container2 {
     grid-area: screen-container2;
     display: grid;
     height: 300px;
-    background-color: lightseagreen;
 }
 
 #screen1 {
@@ -62,12 +60,30 @@ body {
     border-radius: 5px;
 }
 
+.score-container {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    background-color: rgb(73, 158, 87);
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    font-weight: bold;
+    
+}
+
+.image-container {
+    height: 250px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
 #button-container { 
     display: grid;
     justify-content: center;
     grid-area: button-container;
     height: 150px;
-    background-color: lightsalmon;
 }
 
 .button {
