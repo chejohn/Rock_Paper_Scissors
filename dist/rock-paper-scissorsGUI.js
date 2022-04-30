@@ -1,5 +1,5 @@
 
-import {computerPlay} from '/rock-paper-scissors.js';
+import {computerPlay} from './rock-paper-scissors.js';
 
 
 function printTie() {
@@ -65,21 +65,22 @@ function playRound(playerSelection, compSelection) {
         printTie();
     }
     roundCount++;
-    roundCountGUI.textContent = `Round: ${roundCount}`;
+    if (roundCount <= 5) {
+        roundCountGUI.textContent = `Round: ${roundCount}`;
+    }
 }
 
 // updates the screen to reflect the game state
 function progressGame() {
-    
-    if (roundCount < 5) {
+    if (roundCount <= 5) {
         const playerSelection = this.id;
         const compSelection = computerPlay();
         playRound(playerSelection, compSelection);
     }
-    
-    else {
+
+    if (roundCount > 5) {
         if (playerScore > compScore) optionGUI.textContent = 'You Win!';
-        else if (playerScore < compScore) optionGUI.textContent = 'You Loose!'
+        else if (playerScore < compScore) optionGUI.textContent = 'You Loose!';
         else optionGUI.textContent = 'Tied Game!';
         roundCountGUI.textContent = 'Game Over!';
     }
