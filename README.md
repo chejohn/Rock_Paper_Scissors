@@ -1,5 +1,10 @@
+# Rock Paper Scissors
 
-This code allows user to play a rock paper scissors game
-on a browser's window.
+5 round rock paper scissors game
 
-Implementation: JavaScript
+# What I Learned
+
+* DOM manipulation
+* global variables
+* modularity of code
+* asynchronous event-listener callback funcitons
